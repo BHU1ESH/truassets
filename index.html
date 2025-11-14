@@ -20,10 +20,17 @@
   <body>
     <div id="root"></div>
    
-    <script type="module">
+   <script type="module">
   import React from "https://esm.sh/react";
-  import App from "https://esm.sh/BHU1ESH/truassets/src/main.tsx";
+  import ReactDOM from "https://esm.sh/react-dom/client";
+
+  import App from "https://esm.sh/bhu1esh/truassets/src/main.tsx"; // <-- your TSX file on GitHub
+
+  ReactDOM.createRoot(document.getElementById("root")).render(
+    <App />
+  );
 </script>
+
 
   </body>
 </html>
